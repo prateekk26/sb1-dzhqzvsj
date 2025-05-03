@@ -32,7 +32,7 @@ export const Header = React.memo(function Header({ title }: HeaderProps) {
   const displayName = profile?.firstName || (user?.email ? user.email.split('@')[0] : 'User');
   
   const handleProfileClick = () => {
-    navigate('/complete-profile');
+    navigate('/complete-profile?edit=true');
     setShowDropdown(false);
   };
   
